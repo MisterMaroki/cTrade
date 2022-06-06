@@ -7,7 +7,7 @@ $tertiary: #11ece5;
 	height: 400px;
 	margin: 0 auto;
 	// position: fixed;
-	z-index: -1;
+	// z-index: -1;
 }
 .container {
 	display: flex;
@@ -19,6 +19,11 @@ $tertiary: #11ece5;
 	width: 100%;
 	background: rgb(234, 234, 234);
 	border-radius: 0px 0px 119px 400px / 50px 0px 112px 150px;
+	z-index: 200;
+	position: relative;
+	* {
+		z-index: 2;
+	}
 	h1 {
 		font-weight: 300;
 		font-size: 3.5rem;
@@ -32,7 +37,7 @@ $tertiary: #11ece5;
 	height: 270px;
 	margin: 3rem auto;
 	position: absolute;
-	bottom: 0;
+	bottom: -175px;
 }
 
 .flex {
@@ -65,7 +70,7 @@ $tertiary: #11ece5;
 	box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
 		rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
 		rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-	background-image: url('/public/dots.svg');
+	background-image: url('/dots.svg');
 
 	* {
 		z-index: 2;
