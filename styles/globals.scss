@@ -15,8 +15,8 @@ a {
 	box-sizing: border-box;
 }
 .swiper {
-	width: 840px;
-	height: 520px;
+	width: 60vw;
+	height: 55vh;
 }
 
 .swiper-slide {
@@ -24,11 +24,10 @@ a {
 	align-items: center;
 	justify-content: center;
 	border-radius: 18px;
-	font-size: 22px;
-	font-weight: bold;
-	color: #fff;
 }
-
+.swiper-slider > * {
+	background-color: white;
+}
 // .swiper-slide:nth-child(1n) {
 // 	background-color: rgb(206, 17, 17);
 // }
