@@ -20,16 +20,36 @@ export default function Carousel() {
 				className="mySwiper"
 			>
 				<SwiperSlide>
-					<Image src={'/showcase1.svg'} alt="product-slide-1" layout="fill" />
+					<Image
+						src={'/9.svg'}
+						alt="product-slide-1"
+						layout="fill"
+						objectFit="cover"
+					/>
 				</SwiperSlide>
 				<SwiperSlide>
-					<Image src={'/coinpage2.svg'} alt="product-slide-2" layout="fill" />
+					<Image
+						src={'/10.svg'}
+						alt="product-slide-2"
+						layout="fill"
+						objectFit="cover"
+					/>
 				</SwiperSlide>
 				<SwiperSlide>
-					<Image src={'/coinpage5.svg'} alt="product-slide-3" layout="fill" />
+					<Image
+						src={'/11.svg'}
+						alt="product-slide-3"
+						layout="fill"
+						objectFit="cover"
+					/>
 				</SwiperSlide>
 				<SwiperSlide>
-					<Image src={'/showcase2.png'} alt="product-slide-4" layout="fill" />
+					<Image
+						src={'/12.svg'}
+						alt="product-slide-4"
+						layout="fill"
+						objectFit="cover"
+					/>
 				</SwiperSlide>
 			</Swiper>
 		</>
