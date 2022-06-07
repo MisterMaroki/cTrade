@@ -86,3 +86,47 @@
 		}
 	}
 }
+.row {
+	display: flex;
+	justify-content: space-around;
+	padding: 2rem;
+	width: 95%;
+}
+.col {
+	display: flex;
+	flex-direction: column;
+	align-items: left;
+	justify-content: center;
+	flex: 1;
+	gap: 1rem;
+	* {
+		text-align: left;
+	}
+	padding-inline: 5rem;
+	h6 {
+		font-size: 1.2rem;
+		margin: 0;
+	}
+}
+.imgBox {
+	flex: 1;
+	height: 400px;
+	position: relative;
+}
+.icon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: linear-gradient(190.4deg, #6b007d 23.61%, #09121d 71.42%);
+	height: 40px;
+	width: 40px;
+	-webkit-clip-path: polygon(
+		0% 50%,
+		25% 0%,
+		75% 0%,
+		100% 50%,
+		75% 100%,
+		25% 100%
+	);
+	-moz-clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%);
+}

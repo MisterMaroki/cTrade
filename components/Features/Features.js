@@ -1,5 +1,7 @@
+import { LockOutlined } from '@mui/icons-material';
 import { Button } from '@mui/material';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 import React from 'react';
 import styles from './Features.module.scss';
 const Features = () => {
@@ -59,6 +61,35 @@ const Features = () => {
 					<Button color="secondary">Learn more</Button>
 				</div>
 			</motion.div>
+			<div className={styles.row}>
+				<div className={styles.col}>
+					<div className={styles.icon}>
+						<LockOutlined />
+					</div>
+					<h6>Bitcoin & all it’s children</h6>
+					<p>
+						We keep track of the latest data feeds on price, volume, and
+						strength for the top 300 cryptocurrencies.
+					</p>
+				</div>
+				<motion.div
+					whileInView={{ opacity: [0, 1], x: [500, 0] }}
+					transition={{
+						duration: 0.5,
+						delay: 0.3,
+						ease: 'easeInOut',
+					}}
+					className={styles.imgBox}
+				>
+					<Image
+						src={'/coincards.png'}
+						alt="image"
+						layout="fill"
+						objectFit="cover"
+						style={{ borderRadius: '10px' }}
+					/>
+				</motion.div>
+			</div>
 		</div>
 	);
 };

@@ -27,7 +27,6 @@ export default function Carousel() {
 				layout="fill"
 				objectFit="cover"
 				onDragStart={handleDragStart}
-				role="presentation"
 				style={{ borderRadius: '10px' }}
 			/>
 		</div>,
@@ -38,7 +37,6 @@ export default function Carousel() {
 				layout="fill"
 				objectFit="cover"
 				onDragStart={handleDragStart}
-				role="presentation"
 				style={{ borderRadius: '10px' }}
 			/>
 		</div>,
@@ -49,7 +47,6 @@ export default function Carousel() {
 				layout="fill"
 				objectFit="cover"
 				onDragStart={handleDragStart}
-				role="presentation"
 				style={{ borderRadius: '10px' }}
 			/>
 		</div>,
@@ -60,7 +57,6 @@ export default function Carousel() {
 				layout="fill"
 				objectFit="cover"
 				onDragStart={handleDragStart}
-				role="presentation"
 				style={{ borderRadius: '10px' }}
 			/>
 		</div>,
