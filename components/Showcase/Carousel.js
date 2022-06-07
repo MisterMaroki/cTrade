@@ -9,7 +9,7 @@ const style = {
 	margin: '0 auto',
 };
 const responsive = {
-	0: { items: 1 },
+	0: { items: 1.2 },
 	768: { items: 1.2 },
 };
 export default function Carousel() {
