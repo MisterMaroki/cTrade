@@ -12,156 +12,155 @@ const TradeCard = () => {
 	const [chartShowing, setChartShowing] = useState(false);
 	return (
 		<CoinCard className={[styles.trade, styles.carousel].join(' ')}>
-			{/* <Tilt
+			<Tilt
 				tiltEnable={false}
 				glareEnable={true}
 				glareMaxOpacity={0.1}
 				glareColor="whitesmoke"
 				glarePosition="bottom"
 				perspective={40000}
-				style={{ width: '800px', height: '270px', margin: '3rem auto' }}
-			> */}
-			<Box
-				display="grid"
-				gridTemplateColumns="repeat(6, 1fr)"
-				gridTemplateRows="repeat(4,1fr)"
-				height={'270px'}
-				width={'100%'}
-				style={{ padding: '1rem' }}
-				gap={'5px'}
 			>
 				<Box
-					gridColumn="1"
-					gridRow="1"
-					className={(styles.flex, styles.col, styles.nobg)}
+					display="grid"
+					gridTemplateColumns="repeat(6, 1fr)"
+					gridTemplateRows="repeat(4,1fr)"
+					height={'270px'}
+					width={'100%'}
+					style={{ padding: '1rem' }}
+					gap={'5px'}
 				>
-					<Image
-						src="https://assets.coingecko.com/coins/images/1/small/bitcoin.png?1547033579"
-						alt="icon"
-						height={50}
-						width={50}
-					/>
-				</Box>
-				<Box gridColumn="1" gridRow="2">
-					<MyChip label={'BTC'} value={'bitcoin'} />
-				</Box>
+					<Box
+						gridColumn="1"
+						gridRow="1"
+						className={(styles.flex, styles.col, styles.nobg)}
+					>
+						<Image
+							src="https://assets.coingecko.com/coins/images/1/small/bitcoin.png?1547033579"
+							alt="icon"
+							height={50}
+							width={50}
+						/>
+					</Box>
+					<Box gridColumn="1" gridRow="2">
+						<MyChip label={'BTC'} value={'bitcoin'} />
+					</Box>
 
-				<Box
-					gridColumn="2"
-					gridRow="1"
-					className={[styles.flex, styles.darkbg, styles.nobg].join(' ')}
-				>
-					<Chip
-						label="sell"
-						color="warning"
-						icon={<ArrowCircleDown />}
-						size="small"
-					/>
-				</Box>
+					<Box
+						gridColumn="2"
+						gridRow="1"
+						className={[styles.flex, styles.darkbg, styles.nobg].join(' ')}
+					>
+						<Chip
+							label="sell"
+							color="warning"
+							icon={<ArrowCircleDown />}
+							size="small"
+						/>
+					</Box>
 
-				<Box
-					gridColumn="2"
-					gridRow="2"
-					className={[styles.flex, styles.darkbg, styles.nobg].join(' ')}
-				>
-					<Chip
-						label={'Closed with prof'}
-						color="primary"
-						icon={<ArrowCircleUp />}
-						size="small"
-					/>
-				</Box>
+					<Box
+						gridColumn="2"
+						gridRow="2"
+						className={[styles.flex, styles.darkbg, styles.nobg].join(' ')}
+					>
+						<Chip
+							label={'Closed with prof'}
+							color="primary"
+							icon={<ArrowCircleUp />}
+							size="small"
+						/>
+					</Box>
 
-				<Box gridColumn="3/6" gridRow="1/4" className={styles.flex}>
-					{chartShowing ? (
-						<CoinRangeChart />
-					) : (
-						<Button
-							onClick={(e) => {
-								e.stopPropagation();
-								setChartShowing(true);
+					<Box gridColumn="3/6" gridRow="1/4" className={styles.flex}>
+						{chartShowing ? (
+							<CoinRangeChart />
+						) : (
+							<Button
+								onClick={(e) => {
+									e.stopPropagation();
+									setChartShowing(true);
+								}}
+							>
+								view chart snapshot
+							</Button>
+						)}
+					</Box>
+
+					<Box
+						gridColumn="6"
+						gridRow="1"
+						className={[styles.flex, styles.darkbg, styles.col].join(' ')}
+					>
+						<span
+							style={{
+								fontSize: 12,
+								textTransform: 'uppercase',
+								color: 'darkgrey',
 							}}
 						>
-							view chart snapshot
-						</Button>
-					)}
-				</Box>
+							PnL
+						</span>
 
-				<Box
-					gridColumn="6"
-					gridRow="1"
-					className={[styles.flex, styles.darkbg, styles.col].join(' ')}
-				>
-					<span
-						style={{
-							fontSize: 12,
-							textTransform: 'uppercase',
-							color: 'darkgrey',
-						}}
+						<span
+							className={styles.green}
+							style={{
+								fontSize: 12,
+							}}
+						>
+							+11,415,426.00 USD
+						</span>
+					</Box>
+					<Box
+						gridColumn="6"
+						gridRow="2"
+						className={[styles.flex, styles.darkbg, styles.col].join(' ')}
 					>
-						PnL
-					</span>
+						<span
+							style={{
+								fontSize: 12,
+								textTransform: 'uppercase',
+								color: 'darkgrey',
+							}}
+						>
+							PnL(%)
+						</span>
 
-					<span
-						className={styles.green}
-						style={{
-							fontSize: 12,
-						}}
-					>
-						+11,415,426.00 USD
-					</span>
-				</Box>
-				<Box
-					gridColumn="6"
-					gridRow="2"
-					className={[styles.flex, styles.darkbg, styles.col].join(' ')}
-				>
-					<span
-						style={{
-							fontSize: 12,
-							textTransform: 'uppercase',
-							color: 'darkgrey',
-						}}
-					>
-						PnL(%)
-					</span>
+						<span className={styles.green} style={{ fontSize: 18 }}>
+							+6.42%
+						</span>
+					</Box>
 
-					<span className={styles.green} style={{ fontSize: 18 }}>
-						+6.42%
-					</span>
-				</Box>
+					<Box gridColumn="6" gridRow="3">
+						<MyChip label={'Investment'} value={'177,931,380.00'} />
+					</Box>
+					<Box gridColumn="6" gridRow="4">
+						<MyChip label={'Closed Value'} value={'189,346,806.00'} />
+					</Box>
 
-				<Box gridColumn="6" gridRow="3">
-					<MyChip label={'Investment'} value={'177,931,380.00'} />
-				</Box>
-				<Box gridColumn="6" gridRow="4">
-					<MyChip label={'Closed Value'} value={'189,346,806.00'} />
-				</Box>
+					<Box gridColumn={'2'} gridRow="3">
+						<MyChip label={'Closed'} value={'2022-06-03'} />
+					</Box>
+					<Box gridColumn={'2'} gridRow="4">
+						<MyChip label={'Duration'} value={'53:25:03'} />
+					</Box>
 
-				<Box gridColumn={'2'} gridRow="3">
-					<MyChip label={'Closed'} value={'2022-06-03'} />
+					<Box gridColumn={'1'} gridRow="3">
+						<MyChip label={'Opened'} value={'2022-06-01'} />
+					</Box>
+					<Box gridColumn={'1'} gridRow="4">
+						<MyChip label={'Closed: '} value={'7 hours ago'} />
+					</Box>
+					<Box gridColumn="4" gridRow="4">
+						<MyChip label={'Entry'} value={'31,470.00 USD'} />
+					</Box>
+					<Box gridColumn="3" gridRow="4">
+						<MyChip label={'Quantity'} value={'5654'} />
+					</Box>
+					<Box gridColumn="5" gridRow="4">
+						<MyChip label={'Exit Price'} value={'29,451.00 USD'} />
+					</Box>
 				</Box>
-				<Box gridColumn={'2'} gridRow="4">
-					<MyChip label={'Duration'} value={'53:25:03'} />
-				</Box>
-
-				<Box gridColumn={'1'} gridRow="3">
-					<MyChip label={'Opened'} value={'2022-06-01'} />
-				</Box>
-				<Box gridColumn={'1'} gridRow="4">
-					<MyChip label={'Closed: '} value={'7 hours ago'} />
-				</Box>
-				<Box gridColumn="4" gridRow="4">
-					<MyChip label={'Entry'} value={'31,470.00 USD'} />
-				</Box>
-				<Box gridColumn="3" gridRow="4">
-					<MyChip label={'Quantity'} value={'5654'} />
-				</Box>
-				<Box gridColumn="5" gridRow="4">
-					<MyChip label={'Exit Price'} value={'29,451.00 USD'} />
-				</Box>
-			</Box>
-			{/* </Tilt> */}
+			</Tilt>
 		</CoinCard>
 	);
 };

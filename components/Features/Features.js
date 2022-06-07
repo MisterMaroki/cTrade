@@ -1,4 +1,5 @@
 import { Button } from '@mui/material';
+import { motion } from 'framer-motion';
 import React from 'react';
 import styles from './Features.module.scss';
 const Features = () => {
@@ -8,8 +9,15 @@ const Features = () => {
 				#1 Chrome Extension for
 				<br /> Journaling & Analytics
 			</h2>
-
-			<div className={styles.gridContainer}>
+			<motion.div
+				whileInView={{ opacity: [0, 1], x: [50, 0] }}
+				transition={{
+					duration: 0.5,
+					delay: 0.3,
+					ease: 'easeInOut',
+				}}
+				className={styles.gridContainer}
+			>
 				<div className={styles.gridItem}>
 					<h6>See your true performance</h6>
 					<p>
@@ -50,7 +58,7 @@ const Features = () => {
 					</p>
 					<Button color="secondary">Learn more</Button>
 				</div>
-			</div>
+			</motion.div>
 		</div>
 	);
 };

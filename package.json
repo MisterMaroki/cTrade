@@ -14,7 +14,9 @@
 		"@mui/icons-material": "^5.8.2",
 		"@mui/material": "^5.8.2",
 		"chart.js": "^3.7.1",
+		"framer-motion": "^6.3.10",
 		"install": "^0.13.0",
+		"motion": "^10.10.0",
 		"next": "12.1.6",
 		"npm": "^8.12.1",
 		"react": "18.1.0",
@@ -23,7 +25,8 @@
 		"react-dom": "18.1.0",
 		"react-parallax-tilt": "^1.7.40",
 		"react-time-ago": "^7.2.1",
-		"sass": "^1.52.2"
+		"sass": "^1.52.2",
+		"uuid": "^8.3.2"
 	},
 	"devDependencies": {
 		"eslint": "8.16.0",
