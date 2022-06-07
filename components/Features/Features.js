@@ -1,4 +1,4 @@
-import { LockOutlined } from '@mui/icons-material';
+import { LockOutlined, NewReleasesOutlined } from '@mui/icons-material';
 import { Button } from '@mui/material';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
@@ -89,6 +89,36 @@ const Features = () => {
 						style={{ borderRadius: '10px' }}
 					/>
 				</motion.div>
+			</div>
+			<div className={styles.row}>
+				<motion.div
+					whileInView={{ opacity: [0, 1], x: [-500, 0] }}
+					transition={{
+						duration: 0.5,
+						delay: 0.3,
+						ease: 'easeInOut',
+					}}
+					className={styles.imgBox}
+				>
+					<Image
+						src={'/tradecard.png'}
+						alt="image"
+						layout="fill"
+						objectFit="contain"
+						style={{ borderRadius: '10px' }}
+					/>
+				</motion.div>
+				<div className={styles.col}>
+					<div className={styles.icon}>
+						<NewReleasesOutlined />
+					</div>
+					<h6>True functionality is coming</h6>
+					<p>
+						We aim to integrate in-app real orders very soon. Including both
+						market and limit orders; TP/SL; and much more data to become
+						available.
+					</p>
+				</div>
 			</div>
 		</div>
 	);

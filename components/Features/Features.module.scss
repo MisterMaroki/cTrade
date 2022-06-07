@@ -5,7 +5,7 @@
 	align-items: center;
 	gap: 3rem;
 	justify-content: space-around;
-	background-color: #070e17;
+	background-color: #030508;
 	color: whitesmoke;
 	padding-block: 6rem;
 	@media (min-width: 767px) {
@@ -89,7 +89,7 @@
 .row {
 	display: flex;
 	justify-content: space-around;
-	padding: 2rem;
+	padding-inline: 2rem;
 	width: 95%;
 }
 .col {
@@ -118,7 +118,7 @@
 	justify-content: center;
 	align-items: center;
 	background: linear-gradient(190.4deg, #6b007d 23.61%, #09121d 71.42%);
-	height: 40px;
+	height: 35px;
 	width: 40px;
 	-webkit-clip-path: polygon(
 		0% 50%,
