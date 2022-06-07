@@ -91,6 +91,9 @@
 	justify-content: space-around;
 	padding-inline: 2rem;
 	width: 95%;
+	@media (max-width: 767px) {
+		flex-direction: column;
+	}
 }
 .col {
 	display: flex;
