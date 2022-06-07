@@ -44,6 +44,9 @@ $tertiary: #11ece5;
 	@media (max-width: 668px) {
 		transform: scale(0.5);
 	}
+	@media (max-width: 568px) {
+		transform: scale(0.4);
+	}
 }
 
 .flex {
