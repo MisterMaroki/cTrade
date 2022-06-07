@@ -1,12 +1,13 @@
 @import 'react-alice-carousel/lib/scss/alice-carousel.scss';
 
 .showcase {
-	height: 140vh;
+	// height: 140vh;
 
 	background-color: #070e17;
-	padding-top: 25rem;
+	padding-top: 27rem;
 	margin-top: -10rem;
 	margin-bottom: -1px;
+	padding-bottom: 8rem;
 	z-index: 0;
 	display: flex;
 	flex-direction: column;
@@ -20,6 +21,7 @@
 		line-height: 50px;
 		text-align: left;
 		width: 80%;
+		margin-bottom: 3rem;
 		/* or 150% */
 
 		letter-spacing: 0.015em;

@@ -3,8 +3,8 @@ import 'react-alice-carousel/lib/alice-carousel.css';
 import Image from 'next/image';
 import AliceCarousel from 'react-alice-carousel';
 const style = {
-	width: '70vw',
-	height: '50vh',
+	width: '60vw',
+	aspectRatio: '16/9',
 	position: 'relative',
 	margin: '0 auto',
 };

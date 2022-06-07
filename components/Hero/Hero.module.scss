@@ -34,12 +34,15 @@ $tertiary: #11ece5;
 }
 .trade {
 	width: 800px;
-	height: 270px;
+	aspect-ratio: 80/27;
 	margin: 3rem auto;
 	position: absolute;
 	bottom: -175px;
-	@media (max-width: 768px) {
-		transform: scale(0.4);
+	@media (max-width: 868px) {
+		transform: scale(0.8);
+	}
+	@media (max-width: 668px) {
+		transform: scale(0.5);
 	}
 }
 
