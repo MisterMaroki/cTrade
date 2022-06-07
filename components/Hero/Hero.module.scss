@@ -38,6 +38,9 @@ $tertiary: #11ece5;
 	margin: 3rem auto;
 	position: absolute;
 	bottom: -175px;
+	@media (max-width: 768px) {
+		transform: scale(0.4);
+	}
 }
 
 .flex {
