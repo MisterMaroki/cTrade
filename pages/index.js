@@ -4,6 +4,7 @@ import styles from '../styles/Home.module.scss';
 import Hero from '../components/Hero/Hero';
 import Navbar from '../components/Navbar/Navbar';
 import Showcase from '../components/Showcase/Showcase';
+import Features from '../components/Features/Features';
 
 export default function Home() {
 	return (
@@ -16,6 +17,7 @@ export default function Home() {
 			<Navbar />
 			<Hero />
 			<Showcase />
+			<Features />
 			{/* <video autoPlay muted loop className={styles.video}>
 				<source src="./vid.mp4" type="video/mp4" />
 			</video> */}

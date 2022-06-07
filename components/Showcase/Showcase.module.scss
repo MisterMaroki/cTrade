@@ -16,8 +16,10 @@
 		font-size: 40px;
 		line-height: 50px;
 		text-align: left;
-		align-self: flex-start;
-		margin-left: 8rem;
+		@media (min-width: 767px) {
+			align-self: flex-start;
+			margin-left: 8rem;
+		}
 		/* or 150% */
 		width: 400px;
 
