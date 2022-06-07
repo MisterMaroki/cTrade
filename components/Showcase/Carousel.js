@@ -15,8 +15,12 @@ const responsive = {
 export default function Carousel() {
 	const handleDragStart = (e) => e.preventDefault();
 
+	const navItem = (item, i) => {
+		return <i key={i} onClick={() => this.Carousel.slideTo(i)} />;
+	};
+
 	const items = [
-		<div key="vdces" style={style}>
+		<div key="vdces" style={style} data-value="1">
 			<Image
 				src={'/9.svg'}
 				alt="product-slide-1"
@@ -24,9 +28,10 @@ export default function Carousel() {
 				objectFit="cover"
 				onDragStart={handleDragStart}
 				role="presentation"
+				style={{ borderRadius: '10px' }}
 			/>
 		</div>,
-		<div key="rfdrf" style={style}>
+		<div key="rfdrf" style={style} data-value="2">
 			<Image
 				src={'/10.svg'}
 				alt="product-slide-1"
@@ -34,9 +39,10 @@ export default function Carousel() {
 				objectFit="cover"
 				onDragStart={handleDragStart}
 				role="presentation"
+				style={{ borderRadius: '10px' }}
 			/>
 		</div>,
-		<div key="bgyh" style={style}>
+		<div key="bgyh" style={style} data-value="3">
 			<Image
 				src={'/11.svg'}
 				alt="product-slide-1"
@@ -44,9 +50,10 @@ export default function Carousel() {
 				objectFit="cover"
 				onDragStart={handleDragStart}
 				role="presentation"
+				style={{ borderRadius: '10px' }}
 			/>
 		</div>,
-		<div key="refew" style={style}>
+		<div key="refew" style={style} data-value="4">
 			<Image
 				src={'/12.svg'}
 				alt="product-slide-1"
@@ -54,11 +61,20 @@ export default function Carousel() {
 				objectFit="cover"
 				onDragStart={handleDragStart}
 				role="presentation"
+				style={{ borderRadius: '10px' }}
 			/>
 		</div>,
 	];
 
-	return <AliceCarousel mouseTracking items={items} responsive={responsive} />;
+	return (
+		<AliceCarousel
+			mouseTracking
+			items={items}
+			responsive={responsive}
+			disableButtonsControls
+			disableDotsControls
+		/>
+	);
 }
 
 // <Swiper
