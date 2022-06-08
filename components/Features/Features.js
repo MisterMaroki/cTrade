@@ -96,7 +96,7 @@ const Features = () => {
 						src={'/coincards.png'}
 						alt="image"
 						layout="fill"
-						objectFit="cover"
+						objectFit={isMobile ? 'contain' : 'cover'}
 						style={{ borderRadius: '10px' }}
 					/>
 				</motion.div>
