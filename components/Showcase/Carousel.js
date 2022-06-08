@@ -4,12 +4,12 @@ import Image from 'next/image';
 import AliceCarousel from 'react-alice-carousel';
 const style = {
 	width: '60vw',
-	aspectRatio: '16/9',
+	height: '40vh',
 	position: 'relative',
 	margin: '0 auto',
 };
 const responsive = {
-	0: { items: 1 },
+	0: { items: 1.2 },
 	768: { items: 1.2 },
 };
 export default function Carousel() {
@@ -40,7 +40,7 @@ export default function Carousel() {
 				src={'/10.svg'}
 				alt="product-slide-1"
 				layout="fill"
-				objectFit="cover"
+				objectFit={isMobile ? 'contain' : 'cover'}
 				onDragStart={handleDragStart}
 				style={{ borderRadius: '10px' }}
 			/>
@@ -50,7 +50,7 @@ export default function Carousel() {
 				src={'/11.svg'}
 				alt="product-slide-1"
 				layout="fill"
-				objectFit="cover"
+				objectFit={isMobile ? 'contain' : 'cover'}
 				onDragStart={handleDragStart}
 				style={{ borderRadius: '10px' }}
 			/>
@@ -60,7 +60,7 @@ export default function Carousel() {
 				src={'/12.svg'}
 				alt="product-slide-1"
 				layout="fill"
-				objectFit="cover"
+				objectFit={isMobile ? 'contain' : 'cover'}
 				onDragStart={handleDragStart}
 				style={{ borderRadius: '10px' }}
 			/>

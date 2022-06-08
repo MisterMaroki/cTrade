@@ -92,10 +92,10 @@
 	padding-inline: 2rem;
 	width: 95%;
 	@media (max-width: 767px) {
-		flex-direction: column;
+		flex-direction: column-reverse;
 		height: 500px;
 		&:nth-of-type(3) {
-			flex-direction: column-reverse;
+			flex-direction: column;
 		}
 	}
 }

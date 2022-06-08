@@ -15,7 +15,7 @@ $tertiary: #11ece5;
 	align-items: center;
 	justify-content: center;
 	height: 75vh;
-	gap: 4rem;
+	gap: 3rem;
 	width: 100%;
 	background: rgb(234, 234, 234);
 	border-radius: 0px 0px 119px 400px / 50px 0px 112px 150px;
@@ -33,7 +33,7 @@ $tertiary: #11ece5;
 		margin-top: 0;
 	}
 	@media (max-width: 767px) {
-		justify-content: unset;
+		justify-content: center;
 		padding-top: 8rem;
 		h1 {
 			font-size: 2.5rem;
@@ -113,4 +113,12 @@ $tertiary: #11ece5;
 }
 .red {
 	color: red !important;
+}
+.motion {
+	position: absolute;
+	bottom: -175px;
+	@media (max-width: 767px) {
+		position: relative;
+		bottom: 0;
+	}
 }

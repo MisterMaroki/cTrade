@@ -1,21 +1,11 @@
 import Link from 'next/link';
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useRef, useState } from 'react';
 import styles from './Hero.module.scss';
 import TradeCard from './TradeCard';
 import { motion } from 'framer-motion';
 import { Button } from '@mui/material';
 
 const Hero = () => {
-	const [isMobile, setIsMobile] = useState(false);
-
-	useEffect(() => {
-		if (typeof window !== 'undefined') {
-			//here `window` is available
-			window.innerWidth < 768 && setIsMobile(true);
-			// setIsMobile(() => window.innerWidth < 768);
-		}
-	}, []);
-
 	return (
 		<div className={styles.container}>
 			<h1>Take the guesswork out of tracking your trades.</h1>
@@ -57,10 +47,7 @@ const Hero = () => {
 					ease: 'easeInOut',
 					delay: 0.5,
 				}}
-				style={{
-					position: isMobile ? 'relative' : 'absolute',
-					bottom: isMobile ? 0 : '-175px',
-				}}
+				className={styles.motion}
 			>
 				<TradeCard />
 			</motion.div>
