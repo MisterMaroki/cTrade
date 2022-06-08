@@ -114,6 +114,9 @@
 		font-size: 1.2rem;
 		margin: 0;
 	}
+	@media (max-width: 767px) {
+		padding-inline: 1rem;
+	}
 }
 .imgBox {
 	flex: 1;
