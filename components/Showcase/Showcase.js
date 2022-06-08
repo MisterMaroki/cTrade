@@ -1,4 +1,4 @@
-import React, { Suspense } from 'react';
+import React from 'react';
 import Carousel from './Carousel';
 import styles from './Showcase.module.scss';
 const Showcase = () => {

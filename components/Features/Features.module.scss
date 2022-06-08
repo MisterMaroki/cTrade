@@ -110,12 +110,18 @@
 		text-align: left;
 	}
 	padding-inline: 5rem;
+	p {
+		width: 70%;
+	}
 	h6 {
 		font-size: 1.2rem;
 		margin: 0;
 	}
 	@media (max-width: 767px) {
 		padding-inline: 1rem;
+		p {
+			width: 90%;
+		}
 	}
 }
 .imgBox {

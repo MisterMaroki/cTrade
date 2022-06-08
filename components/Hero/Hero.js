@@ -3,11 +3,9 @@ import React, { useEffect, useRef, useState } from 'react';
 import styles from './Hero.module.scss';
 import TradeCard from './TradeCard';
 import { motion } from 'framer-motion';
-import { v4 as uuid } from 'uuid';
 import { Button } from '@mui/material';
 
 const Hero = () => {
-	const [mousePosition, setMousePosition] = useState({});
 	const [isMobile, setIsMobile] = useState(false);
 
 	useEffect(() => {
@@ -17,10 +15,7 @@ const Hero = () => {
 			// setIsMobile(() => window.innerWidth < 768);
 		}
 	}, []);
-	const boxRef = useRef();
-	const handleMouseMove = (e) => {
-		setMousePosition(getRelativeCoordinates(e, boxRef.current));
-	};
+
 	return (
 		<div className={styles.container}>
 			<h1>Take the guesswork out of tracking your trades.</h1>

@@ -1,7 +1,4 @@
-import { CircularProgress } from '@mui/material';
 import React from 'react';
-import { useEffect } from 'react';
-import { useState } from 'react';
 import 'chart.js/auto';
 import { Line } from 'react-chartjs-2';
 
@@ -10,8 +7,7 @@ export function toTimestamp(strDate) {
 	return datum / 1000;
 }
 const CoinRangeChart = () => {
-	const [label, setLabel] = useState('Trade Snapshot');
-
+	const label = 'Trade Snapshot';
 	return (
 		<Line
 			data={{

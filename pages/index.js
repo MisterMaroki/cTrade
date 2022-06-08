@@ -1,5 +1,5 @@
+/* eslint-disable react/react-in-jsx-scope */
 import Head from 'next/head';
-import Image from 'next/image';
 import styles from '../styles/Home.module.scss';
 import Hero from '../components/Hero/Hero';
 import Navbar from '../components/Navbar/Navbar';
