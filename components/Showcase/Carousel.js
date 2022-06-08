@@ -4,7 +4,7 @@ import Image from 'next/image';
 import AliceCarousel from 'react-alice-carousel';
 const style = {
 	width: '60vw',
-	height: '40vw',
+	height: '40vh',
 	aspectRatio: '16/9',
 	position: 'relative',
 	margin: '0 auto',
