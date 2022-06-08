@@ -93,6 +93,10 @@
 	width: 95%;
 	@media (max-width: 767px) {
 		flex-direction: column;
+		height: 500px;
+		&:nth-of-type(3) {
+			flex-direction: column-reverse;
+		}
 	}
 }
 .col {
@@ -132,4 +136,19 @@
 		25% 100%
 	);
 	-moz-clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%);
+}
+.image-container {
+	width: 100%;
+
+	> div {
+		position: unset !important;
+	}
+
+	.image {
+		object-fit: contain;
+		width: 100% !important;
+		position: relative !important;
+		height: unset !important;
+		// height: 100% !important;
+	}
 }

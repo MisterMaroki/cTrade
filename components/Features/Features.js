@@ -2,9 +2,20 @@ import { LockOutlined, NewReleasesOutlined } from '@mui/icons-material';
 import { Button } from '@mui/material';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import styles from './Features.module.scss';
 const Features = () => {
+	// const isMobile = window.innerWidth < 768;
+	const [isMobile, setIsMobile] = useState(false);
+
+	useEffect(() => {
+		if (typeof window !== 'undefined') {
+			//here `window` is available
+			window.innerWidth < 768 && setIsMobile(true);
+			// setIsMobile(() => window.innerWidth < 768);
+		}
+	}, []);
+
 	return (
 		<div className={styles.container}>
 			<h2>
@@ -73,7 +84,7 @@ const Features = () => {
 					</p>
 				</div>
 				<motion.div
-					whileInView={{ opacity: [0, 1], x: [500, 0] }}
+					whileInView={{ opacity: [0, 1], x: isMobile ? 0 : [500, 0] }}
 					transition={{
 						duration: 0.5,
 						delay: 0.3,
@@ -92,7 +103,7 @@ const Features = () => {
 			</div>
 			<div className={styles.row}>
 				<motion.div
-					whileInView={{ opacity: [0, 1], x: [-500, 0] }}
+					whileInView={{ opacity: [0, 1], x: isMobile ? 0 : [-500, 0] }}
 					transition={{
 						duration: 0.5,
 						delay: 0.3,
