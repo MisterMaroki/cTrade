@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import React, { useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import styles from './Hero.module.scss';
 import TradeCard from './TradeCard';
 import { motion } from 'framer-motion';
@@ -8,6 +8,15 @@ import { Button } from '@mui/material';
 
 const Hero = () => {
 	const [mousePosition, setMousePosition] = useState({});
+	const [isMobile, setIsMobile] = useState(false);
+
+	useEffect(() => {
+		if (typeof window !== 'undefined') {
+			//here `window` is available
+			window.innerWidth < 768 && setIsMobile(true);
+			// setIsMobile(() => window.innerWidth < 768);
+		}
+	}, []);
 	const boxRef = useRef();
 	const handleMouseMove = (e) => {
 		setMousePosition(getRelativeCoordinates(e, boxRef.current));
@@ -53,7 +62,10 @@ const Hero = () => {
 					ease: 'easeInOut',
 					delay: 0.5,
 				}}
-				style={{ position: 'absolute', bottom: '-175px' }}
+				style={{
+					position: isMobile ? 'relative' : 'absolute',
+					bottom: isMobile ? 0 : '-175px',
+				}}
 			>
 				<TradeCard />
 			</motion.div>

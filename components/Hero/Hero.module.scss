@@ -32,6 +32,14 @@ $tertiary: #11ece5;
 		text-align: center;
 		margin-top: 0;
 	}
+	@media (max-width: 767px) {
+		justify-content: unset;
+		padding-top: 10rem;
+		h1 {
+			font-size: 2.5rem;
+			width: 80%;
+		}
+	}
 }
 .trade {
 	width: 800px;
