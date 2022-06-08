@@ -95,6 +95,16 @@
 			flex-direction: column;
 		}
 	}
+	p {
+		width: 60%;
+		color: rgb(168, 168, 168);
+		line-height: 1.5rem;
+		font-weight: 400;
+		font-size: 1rem;
+		letter-spacing: 0.2px;
+		margin: 0;
+		padding: 0 0 1rem 0;
+	}
 }
 .col {
 	display: flex;
@@ -143,4 +153,28 @@
 		25% 100%
 	);
 	-moz-clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%);
+}
+.dataCol {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	text-align: center;
+	padding: 1rem 0;
+
+	p {
+		width: 60%;
+		color: rgb(168, 168, 168);
+		line-height: 1.5rem;
+		font-weight: 400;
+		font-size: 1rem;
+		letter-spacing: 0.2px;
+		margin: 0;
+		padding: 0 0 1rem 0;
+	}
+	h6 {
+		font-size: 1.2rem;
+		margin: 0;
+		padding: 1rem 0;
+	}
 }

@@ -5,6 +5,7 @@ import Hero from '../components/Hero/Hero';
 import Navbar from '../components/Navbar/Navbar';
 import Showcase from '../components/Showcase/Showcase';
 import Features from '../components/Features/Features';
+import GetStarted from '../components/GetStarted/GetStarted';
 
 export default function Home() {
 	return (
@@ -18,6 +19,7 @@ export default function Home() {
 			<Hero />
 			<Showcase />
 			<Features />
+			<GetStarted />
 			{/* <video autoPlay muted loop className={styles.video}>
 				<source src="./vid.mp4" type="video/mp4" />
 			</video> */}

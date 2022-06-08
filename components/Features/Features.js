@@ -1,5 +1,9 @@
 import { Button } from '@mui/material';
-import { LockOutlined, NewReleasesOutlined } from '@mui/icons-material';
+import {
+	DataUsageOutlined,
+	LockOutlined,
+	NewReleasesOutlined,
+} from '@mui/icons-material';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import React, { useEffect, useState } from 'react';
@@ -130,6 +134,35 @@ const Features = () => {
 						available.
 					</p>
 				</div>
+			</div>
+			<div className={('styles.row', 'styles.dataCol')}>
+				<div className={styles.dataCol}>
+					<div className={styles.icon}>
+						<DataUsageOutlined />
+					</div>
+					<h6>We{"'"}re all about the data.</h6>
+					<p>
+						Striving to display data with as little {"'"}noise{"'"} as possible
+						so you can focus on what matters the most.
+					</p>
+				</div>
+				<motion.div
+					whileInView={{ opacity: [0, 1], y: isMobile ? 0 : [50, 0], x: 0 }}
+					transition={{
+						duration: 0.4,
+						delay: 0.3,
+						ease: 'easeInOut',
+					}}
+					className={styles.imgBox}
+				>
+					<Image
+						src={'/list.png'}
+						alt="image"
+						layout="fill"
+						objectFit="contain"
+						style={{ borderRadius: '10px' }}
+					/>
+				</motion.div>
 			</div>
 		</div>
 	);
