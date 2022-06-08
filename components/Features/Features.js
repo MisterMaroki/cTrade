@@ -30,12 +30,20 @@ const Features = () => {
 				whileInView={{ opacity: [0, 1], x: [50, 0] }}
 				transition={{
 					duration: 0.5,
-					delay: 0.3,
+					delay: 0.1,
 					ease: 'easeInOut',
 				}}
 				className={styles.gridContainer}
 			>
-				<div className={styles.gridItem}>
+				<motion.div
+					whileInView={{ opacity: [0, 1], x: [50, 0] }}
+					transition={{
+						duration: 0.5,
+						delay: 0.3,
+						ease: 'easeInOut',
+					}}
+					className={styles.gridItem}
+				>
 					<h6>See your true performance</h6>
 					<p>
 						We, unlike exchanges, maintain a record of all your closed trades
@@ -44,8 +52,16 @@ const Features = () => {
 						community data
 					</p>
 					<Button color="secondary">Learn more</Button>
-				</div>
-				<div className={styles.gridItem}>
+				</motion.div>
+				<motion.div
+					whileInView={{ opacity: [0, 1], x: [50, 0] }}
+					transition={{
+						duration: 0.5,
+						delay: 0.4,
+						ease: 'easeInOut',
+					}}
+					className={styles.gridItem}
+				>
 					<h6>Don&apos;t miss trades</h6>
 					<p>
 						The app we have built lays rest in your google chrome new tab
@@ -54,8 +70,16 @@ const Features = () => {
 						upcoming volatility.
 					</p>
 					<Button color="secondary">Learn more</Button>
-				</div>
-				<div className={styles.gridItem}>
+				</motion.div>
+				<motion.div
+					whileInView={{ opacity: [0, 1], x: [50, 0] }}
+					transition={{
+						duration: 0.5,
+						delay: 0.5,
+						ease: 'easeInOut',
+					}}
+					className={styles.gridItem}
+				>
 					<h6>Stay in the know</h6>
 					<p>
 						We had some of the top traders in the world tracking accounts with
@@ -64,8 +88,16 @@ const Features = () => {
 						leaderboards.
 					</p>
 					<Button color="secondary">Learn more</Button>
-				</div>
-				<div className={styles.gridItem}>
+				</motion.div>
+				<motion.div
+					whileInView={{ opacity: [0, 1], x: [50, 0] }}
+					transition={{
+						duration: 0.5,
+						delay: 0.6,
+						ease: 'easeInOut',
+					}}
+					className={styles.gridItem}
+				>
 					<h6>Be a part of development</h6>
 					<p>
 						We’re always open to feedback on our product and being #1 is
@@ -74,7 +106,7 @@ const Features = () => {
 						sure you tag us...
 					</p>
 					<Button color="secondary">Learn more</Button>
-				</div>
+				</motion.div>
 			</motion.div>
 			<div className={styles.row}>
 				<div className={styles.col}>
