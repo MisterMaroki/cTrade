@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import 'react-alice-carousel/lib/alice-carousel.css';
 import Image from 'next/image';
 import AliceCarousel from 'react-alice-carousel';
@@ -13,11 +13,16 @@ const responsive = {
 	768: { items: 1.2 },
 };
 export default function Carousel() {
-	const handleDragStart = (e) => e.preventDefault();
+	const [isMobile, setIsMobile] = useState(false);
 
-	const navItem = (item, i) => {
-		return <i key={i} onClick={() => this.Carousel.slideTo(i)} />;
-	};
+	useEffect(() => {
+		if (typeof window !== 'undefined') {
+			// here `window` is available
+			window.innerWidth < 768 && setIsMobile(true);
+			// setIsMobile(() => window.innerWidth < 768);
+		}
+	}, []);
+	const handleDragStart = (e) => e.preventDefault();
 
 	const items = [
 		<div key="vdces" style={style} data-value="1">
@@ -25,7 +30,7 @@ export default function Carousel() {
 				src={'/9.svg'}
 				alt="product-slide-1"
 				layout="fill"
-				objectFit="cover"
+				objectFit={isMobile ? 'contain' : 'cover'}
 				onDragStart={handleDragStart}
 				style={{ borderRadius: '10px' }}
 			/>
