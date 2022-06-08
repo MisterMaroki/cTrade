@@ -4,13 +4,13 @@ import Image from 'next/image';
 import AliceCarousel from 'react-alice-carousel';
 const style = {
 	width: '60vw',
-	height: '40vh',
+	height: '50vh',
 	position: 'relative',
 	margin: '0 auto',
 };
 const responsive = {
 	0: { items: 1.2 },
-	768: { items: 1.2 },
+	768: { items: 1.4 },
 };
 export default function Carousel() {
 	const [isMobile, setIsMobile] = useState(false);

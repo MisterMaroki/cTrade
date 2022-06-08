@@ -3,14 +3,11 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	gap: 3rem;
+	gap: 5rem;
 	justify-content: space-around;
 	background-color: #030508;
 	color: whitesmoke;
 	padding-block: 6rem;
-	@media (min-width: 767px) {
-		gap: 2rem;
-	}
 
 	h2 {
 		font-style: normal;
@@ -109,7 +106,7 @@
 	* {
 		text-align: left;
 	}
-	padding-inline: 5rem;
+	padding-left: 5rem;
 	p {
 		width: 70%;
 	}
@@ -119,8 +116,9 @@
 	}
 	@media (max-width: 767px) {
 		padding-inline: 1rem;
+		padding-left: 5rem;
 		p {
-			width: 90%;
+			width: 80%;
 		}
 	}
 }
