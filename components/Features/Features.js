@@ -179,6 +179,7 @@ const Features = () => {
 					</p>
 				</div>
 				<motion.div
+					style={{ width: '80%', margin: '0 auto' }}
 					whileInView={{ opacity: [0, 1], y: isMobile ? 0 : [50, 0], x: 0 }}
 					transition={{
 						duration: 0.4,

@@ -125,10 +125,13 @@
 		margin: 0;
 	}
 	@media (max-width: 767px) {
-		padding-inline: 1rem;
-		padding-left: 5rem;
+		padding-inline: 1rem !important;
 		p {
-			width: 80%;
+			width: 90%;
+			margin: 0 auto;
+		}
+		* {
+			text-align: center !important;
 		}
 	}
 }
@@ -138,6 +141,18 @@
 	padding-right: 5rem;
 	* {
 		text-align: right;
+	}
+	@media (max-width: 767px) {
+		align-items: center;
+		padding: 0;
+
+		p {
+			width: 90%;
+			margin: 0 auto;
+		}
+		* {
+			text-align: center !important;
+		}
 	}
 }
 .imgBox {
@@ -161,6 +176,9 @@
 		25% 100%
 	);
 	-moz-clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%);
+	@media (max-width: 767px) {
+		align-self: center;
+	}
 }
 .dataCol {
 	display: flex;

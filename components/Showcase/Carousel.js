@@ -33,7 +33,7 @@ export default function Carousel() {
 				layout="fill"
 				objectFit={isMobile ? 'contain' : 'cover'}
 				onDragStart={handleDragStart}
-				style={{ borderRadius: '10px' }}
+				style={{ borderRadius: '10px', cursor: 'pointer' }}
 			/>
 		</div>,
 		<div key="rfdrf" style={style} data-value="2">
@@ -43,7 +43,7 @@ export default function Carousel() {
 				layout="fill"
 				objectFit={isMobile ? 'contain' : 'cover'}
 				onDragStart={handleDragStart}
-				style={{ borderRadius: '10px' }}
+				style={{ borderRadius: '10px', cursor: 'pointer' }}
 			/>
 		</div>,
 		<div key="bgyh" style={style} data-value="3">
@@ -53,7 +53,7 @@ export default function Carousel() {
 				layout="fill"
 				objectFit={isMobile ? 'contain' : 'cover'}
 				onDragStart={handleDragStart}
-				style={{ borderRadius: '10px' }}
+				style={{ borderRadius: '10px', cursor: 'pointer' }}
 			/>
 		</div>,
 		<div key="refew" style={style} data-value="4">
@@ -63,7 +63,7 @@ export default function Carousel() {
 				layout="fill"
 				objectFit={isMobile ? 'contain' : 'cover'}
 				onDragStart={handleDragStart}
-				style={{ borderRadius: '10px' }}
+				style={{ borderRadius: '10px', cursor: 'pointer' }}
 			/>
 		</div>,
 	];
