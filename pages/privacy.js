@@ -51,21 +51,32 @@ const privacy = () => {
 										<bdt className="block-component" />
 									</span>
 								</span>{' '}
-								(<bdt className="block-component" />'
+								(<bdt className="block-component" />
+								{"'"}
 								<bdt className="block-component" />
 								<strong>Company</strong>
 								<bdt className="statement-end-if-in-editor" />
-								', '<strong>we</strong>', '<strong>us</strong>', or '
-								<strong>our</strong>',
+								{"'"}, {"'"}
+								<strong>we</strong>
+								{"'"}, {"'"}
+								<strong>us</strong>
+								{"'"}, or {"'"}
+								<strong>our</strong>
+								{"'"},
 								<bdt className="else-block" />
 							</span>
 							<span data-custom-class="body_text">
 								), describes how and why we might collect, store, use, and/or
-								share (<bdt className="block-component" />'
-								<strong>process</strong>'
+								share (<bdt className="block-component" />
+								{"'"}
+								<strong>process</strong>
+								{"'"}
 								<bdt className="else-block" />) your information when you use
-								our services (<bdt className="block-component" />'
-								<strong>Services</strong>'<bdt className="else-block" />
+								our services (<bdt className="block-component" />
+								{"'"}
+								<strong>Services</strong>
+								{"'"}
+								<bdt className="else-block" />
 								), such as when you:
 							</span>
 						</span>
@@ -990,7 +1001,8 @@ const privacy = () => {
 									social media account details, like your Facebook, Twitter, or
 									other social media account. If you choose to register in this
 									way, we will collect the information described in the section
-									called <bdt className="block-component" />'
+									called <bdt className="block-component" />
+									{"'"}
 									<bdt className="else-block" />
 									<span style={{ fontSize: 15 }}>
 										<span data-custom-class="body_text">
@@ -1003,7 +1015,8 @@ const privacy = () => {
 											</span>
 										</span>
 									</span>
-									<bdt className="block-component" />'
+									<bdt className="block-component" />
+									{"'"}
 									<bdt className="else-block" /> below.
 								</span>
 							</span>
@@ -1445,16 +1458,16 @@ const privacy = () => {
 																													>
 																														<strong>
 																															To save or protect
-																															an individual's
-																															vital interest.
+																															an individual{"'"}
+																															s vital interest.
 																														</strong>{' '}
 																														We may process your
 																														information when
 																														necessary to save or
 																														protect an
-																														individual’s vital
-																														interest, such as to
-																														prevent harm.
+																														individual{"'"}s
+																														vital interest, such
+																														as to prevent harm.
 																													</span>
 																												</span>
 																												<bdt className="statement-end-if-in-editor">
@@ -4168,7 +4181,7 @@ const privacy = () => {
 																																			in the
 																																			section{' '}
 																																			<bdt className="block-component" />
-																																			'
+																																			{"'"}
 																																			<bdt className="else-block" />
 																																		</span>
 																																	</span>
@@ -4218,7 +4231,7 @@ const privacy = () => {
 																																	>
 																																		<span data-custom-class="body_text">
 																																			<bdt className="block-component" />
-																																			'
+																																			{"'"}
 																																			<bdt className="else-block" />{' '}
 																																			below.
 																																		</span>
@@ -4568,7 +4581,7 @@ const privacy = () => {
 																																			in the
 																																			section{' '}
 																																			<bdt className="block-component" />
-																																			'
+																																			{"'"}
 																																			<bdt className="else-block" />
 																																		</span>
 																																	</span>
@@ -4618,7 +4631,7 @@ const privacy = () => {
 																																	>
 																																		<span data-custom-class="body_text">
 																																			<bdt className="block-component" />
-																																			'
+																																			{"'"}
 																																			<bdt className="else-block" />{' '}
 																																			below
 																																			<bdt className="block-component" />
@@ -5024,7 +5037,7 @@ const privacy = () => {
 																																			Do-Not-Track
 																																			(
 																																			<bdt className="block-component" />
-																																			'DNT'
+																																			{'DNT'}
 																																			<bdt className="else-block" />
 																																			) feature
 																																			or setting
@@ -5259,8 +5272,9 @@ const privacy = () => {
 																																			also known
 																																			as the{' '}
 																																			<bdt className="block-component" />
-																																			'Shine The
-																																			Light'
+																																			{
+																																				'Shine The Light'
+																																			}
 																																			<bdt className="else-block" />{' '}
 																																			law,
 																																			permits
@@ -5599,7 +5613,9 @@ const privacy = () => {
 																																			by an
 																																			updated{' '}
 																																			<bdt className="block-component" />
-																																			'Revised'
+																																			{
+																																				'Revised'
+																																			}
 																																			<bdt className="else-block" />{' '}
 																																			date and
 																																			the
@@ -6201,7 +6217,7 @@ const privacy = () => {
 																														>
 																															This privacy
 																															policy was created
-																															using Termly's{' '}
+																															using Termly{"'"}s{' '}
 																															<a
 																																style={{
 																																	color:
